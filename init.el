@@ -16,8 +16,8 @@
 (menu-bar-mode 1)
 (tool-bar-mode -1)
 (scroll-bar-mode nil)
-(setq user-mail-address "federico@mheroin.com")
-(setq user-full-name "Federico Builes")
+(setq user-mail-address "jairo.vasquez@gmail.com")
+(setq user-full-name "Jairo Vasquez")
 
 ;; personal preferences
 (mouse-wheel-mode t)
@@ -56,15 +56,15 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; default window sizes
-(set-frame-height (selected-frame) 37)
-(set-frame-width (selected-frame) 120)
-(set-frame-position (selected-frame) 50 40)
+(set-frame-height (selected-frame) 43)
+(set-frame-width (selected-frame) 151)
+(set-frame-position (selected-frame) 20 20)
 
 (server-start)
 
 ;; use a nice font by default
 (set-default-font "-apple-inconsolata-medium-r-normal--0-0-0-0-m-0-iso10646-1")
-(set-face-attribute 'default nil :height 220)
+(set-face-attribute 'default nil :height 150)
 
 ;; add ~/.emacs.d to the load path
 (add-to-list 'load-path "~/.emacs.d")
@@ -106,16 +106,3 @@
  '(rspec-use-rake-flag nil)
  '(rspec-use-rvm nil))
 (put 'downcase-region 'disabled nil)
-
-
-;;; This was installed by package-install.el.
-;;; This provides support for the package system and
-;;; interfacing with ELPA, the package archive.
-;;; Move this code earlier if you want to reference
-;;; packages in your .emacs.
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (add-to-list 'package-archives
-               '("marmalade" . "http://marmalade-repo.org/packages/"))
-  (package-initialize))

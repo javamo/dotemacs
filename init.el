@@ -56,15 +56,15 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; default window sizes
-(set-frame-height (selected-frame) 43)
-(set-frame-width (selected-frame) 151)
-(set-frame-position (selected-frame) 20 20)
+(set-frame-height (selected-frame) 42)
+(set-frame-width (selected-frame) 160)
+(set-frame-position (selected-frame) 30 20)
 
 (server-start)
 
 ;; use a nice font by default
 (set-default-font "-apple-inconsolata-medium-r-normal--0-0-0-0-m-0-iso10646-1")
-(set-face-attribute 'default nil :height 150)
+(set-face-attribute 'default nil :height 160)
 
 ;; add ~/.emacs.d to the load path
 (add-to-list 'load-path "~/.emacs.d")

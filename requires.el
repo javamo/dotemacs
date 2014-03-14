@@ -45,3 +45,12 @@
 
 (require 'rvm)
 (rvm-use-default)
+
+;; org
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+;; json edit
+(setq auto-mode-alist (cons '("\\.json\\'" . js-mode) auto-mode-alist))

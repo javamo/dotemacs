@@ -56,9 +56,9 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; default window sizes
-(set-frame-height (selected-frame) 42)
-(set-frame-width (selected-frame) 160)
-(set-frame-position (selected-frame) 30 20)
+(set-frame-height (selected-frame) 45)
+(set-frame-width (selected-frame) 140)
+(set-frame-position (selected-frame) 8 20)
 
 (server-start)
 
